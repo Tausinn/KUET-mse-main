@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "EB Garamond", "serif";
+    
 }
 
    
@@ -18,6 +19,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
+    
 }
 
 .logo {
@@ -111,7 +113,7 @@ body {
 
 .hero {
     height: 100vh;
-    background-image: url(./images/durbarKUET.jpg); /* You will add the image URL here */
+    background-image: url(./images/durbarKUET.jpg); /*add the image URL here */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -249,7 +251,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden; /* Prevent content overflow */
+    overflow: hidden; 
 }
 
 .card:hover {
@@ -260,8 +262,8 @@ body {
     padding: 15px;
     color: white;
     text-align: center;
-    flex-grow: 1; /* Ensures that content like text is balanced */
-    overflow-y: auto; /* If the content exceeds, it will scroll */
+    flex-grow: 1; 
+    overflow-y: auto; 
     
     
     
@@ -271,14 +273,14 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Ensures the image fits inside the card without stretching */
+    object-fit: cover; 
 }
 
 .card-text {
     font-size: 1rem;
     margin-top: 10px;
     color: #ddd;
-    overflow-wrap: break-word; /* Handles long words or links inside the text */
+    overflow-wrap: break-word; 
 }
 
 .card-title{
@@ -310,8 +312,8 @@ body {
 /* General settings for the book section */
 .book-section {
     padding: 20px;
-    background-color: #1a1a1a; /* Dark background */
-    color: #fff; /* Light text */
+    background-color: #1a1a1a; 
+    color: #fff; 
   }
 
   .section-head{
@@ -361,9 +363,9 @@ body {
   }
   
   .book-card {
-    background-color: #262626; /* Darker card background */
+    background-color: #262626; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -373,12 +375,12 @@ body {
   }
   
   .book-card:hover {
-    transform: translateY(-10px); /* Lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
   }
   
   .book-image img {
-    width: 100%; /* Image takes 70% of the container */
+    width: 100%; 
     height: 250px;
     border-radius: 8px;
   }
@@ -426,7 +428,7 @@ body {
   
   .see-more-btn,
   .show-less-btn {
-    background-color: #333; /* Dark background */
+    background-color: #333;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -437,14 +439,14 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   }
   
   .see-more-btn:hover,
   .show-less-btn:hover {
     background-color: #444;
-    transform: translateY(-5px); /* Lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
   }
   
   /* Responsive design */
@@ -460,7 +462,7 @@ body {
 
   /* General Styles */
 footer {
-    background-color: #111; /* Change to match your website's color scheme */
+    background-color: #111; 
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -496,7 +498,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #f0a500; /* Highlight color on hover */
+    color: #f0a500; 
 }
 
 .footer-logo {
@@ -560,6 +562,65 @@ footer {
 
 .other-books{
     width: 250px;
+}
+
+.notice-btn {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff; 
+    border: 2px solid #fff; 
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.notice-btn:hover {
+    background-color: #fff; 
+    color: #000; 
+    transform: scale(1.05); 
+}
+
+.notice-btn:focus {
+    outline: none; 
+}
+
+/* Responsive Design */
+
+/* For small screens (mobile devices) */
+@media (max-width: 600px) {
+    .notice-btn {
+        width: 80%; 
+        padding: 10px 0;
+        font-size: 1rem; 
+        text-align: center; 
+    }
+
+    .book-btn{
+        width: 50%;
+    }
+}
+
+/* For tablets and medium screens */
+@media (min-width: 601px) and (max-width: 992px) {
+    .notice-btn {
+        font-size: 1rem; 
+        padding: 12px 18px; 
+        font-weight: bold;
+    }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 993px) {
+    .notice-btn {
+        font-size: 1.2rem; 
+        padding: 10px 20px; 
+    }
+}
+
+.book-btn{
+    margin-top: 5px;
 }
 
  
