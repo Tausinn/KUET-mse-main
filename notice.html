@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Darkish background */
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .notice-board {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            overflow-x: auto; /* Enable horizontal scroll for mobile */
+        }
+        .notice-board th, .notice-board td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+        .notice-board th {
+            background-color: #333;
+            color: #fff;
+        }
+        .notice-board tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .notice-board th, .notice-board td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table class="notice-board">
+        <thead>
+            <tr>
+                <th>Notice</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="noticeTable">
+            <!-- Dynamic rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Sample array of notices (you can add/edit notices here)
+        const notices = [
+            { text: "Approximate Orientation Date: 27 Oct 2024", date: "07 Oct 2024" },
+            
+            
+        ];
+
+        // Function to dynamically load notices into the table
+        window.onload = function() {
+            const noticeTable = document.getElementById('noticeTable');
+            notices.forEach(notice => {
+                createTableRow(notice.text, notice.date);
+            });
+        };
+
+        // Function to create a table row for each notice
+        function createTableRow(noticeText, dateString) {
+            const noticeTable = document.getElementById('noticeTable');
+            const newRow = document.createElement('tr');
+
+            // Create notice column
+            const noticeCell = document.createElement('td');
+            noticeCell.textContent = noticeText;
+            newRow.appendChild(noticeCell);
+
+            // Create date column
+            const dateCell = document.createElement('td');
+            dateCell.textContent = dateString;
+            newRow.appendChild(dateCell);
+
+            // Append the new row to the table
+            noticeTable.appendChild(newRow);
+        }
+    </script>
+
+</body>
+</html>
