@@ -192,6 +192,12 @@ h1 {
     50% { border-color: white; }
 }
 
+@media(max-width: 480px){
+    .typewriter{
+        font-size: 1.6rem;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -593,7 +599,7 @@ footer {
     .notice-btn {
         width: 80%; 
         padding: 10px 0;
-        font-size: 1rem; 
+        font-size: 1.15rem; 
         text-align: center; 
     }
 
