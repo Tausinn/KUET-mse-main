@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resume-form">
+      <!-- Basic Info -->
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter your address">
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="Skills" placeholder="Add Your Skills">
+
+      <!-- Experience Section -->
+      <h2>Experience</h2>
+      <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+      <!-- Education Section -->
+      <h2>Education</h2>
+      <textarea id="education" placeholder="Describe your education"></textarea>
+
+      <!-- Optional Sections -->
+      <h2>Optional Sections</h2>
+
+      <!-- Interests -->
+      <input type="checkbox" id="interests-check" onclick="toggleSection('interests-section')"> Interests
+      <div id="interests-section" style="display:none;">
+        <textarea id="interests" placeholder="List your interests"></textarea>
+      </div>
+
+      <!-- Projects -->
+      <input type="checkbox" id="projects-check" onclick="toggleSection('projects-section')"> Projects
+      <div id="projects-section" style="display:none;">
+        <textarea id="projects" placeholder="List your projects"></textarea>
+      </div>
+
+      <!-- Hobbies -->
+      <input type="checkbox" id="hobbies-check" onclick="toggleSection('hobbies-section')"> Hobbies
+      <div id="hobbies-section" style="display:none;">
+        <textarea id="hobbies" placeholder="List your hobbies"></textarea>
+      </div>
+
+      <!-- Achievements -->
+      <input type="checkbox" id="achievements-check" onclick="toggleSection('achievements-section')"> Achievements
+      <div id="achievements-section" style="display:none;">
+        <textarea id="achievements" placeholder="List your achievements"></textarea>
+      </div>
+
+      <button type="button" onclick="generateResume()">Generate Resume</button>
+    </form>
+  </div>
+
+  <!-- Resume Output -->
+  <div class="resume-output" id="resume-output"></div>
+
+  <!-- JS Libraries -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="resume.js"></script>
+  
+</body>
+</html>

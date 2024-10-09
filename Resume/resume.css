@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+body {
+    background-color: #333;
+    font-family: "EB Garamond", "serif";
+    color: white;
+    
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Resume Wrapper */
+  .resume-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  /* Left column (Personal details) */
+  .left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  .left-column h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  .left-column .personal-details p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #777;
+  }
+  
+  .left-column h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .left-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Right column (Experience, Education, Projects) */
+  .right-column {
+    width: 65%;
+    padding: 20px;
+  }
+  
+  .right-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+  }
+  
+  .section-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    
+  }
+  
+  /* Icons styling */
+  .left-column i {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  
+  /* Additional Styling */
+  .resume-output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #download-resume {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1b2b36;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Form labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 98%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    
+  }
+  
+  /* Optional sections styling */
+  input[type="checkbox"] {
+    margin-right: 10px;
+    color: white;
+    
+  }
+  
+  #interests-section,
+  #projects-section,
+  #hobbies-section,
+  #achievements-section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color:#333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  /* Style for the resume-output container */
+  .resume-output {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+
+    /* Container adjustments */
+    .container {
+      padding: 15px;
+      box-shadow: none; /* Remove shadow for better mobile performance */
+    }
+  
+    /* Heading adjustments */
+    h1, h2 {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  
+    /* Input fields and textarea */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      padding: 10px;
+      font-size: 14px;
+      max-width: 90%;
+    }
+  
+    /* Button styling */
+    button {
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  
+    /* Checkbox sections */
+    input[type="checkbox"] {
+      transform: scale(1.2); /* Increase size for easier interaction on mobile */
+    }
+  
+    /* Resume output section */
+    .resume-output {
+      margin-top: 20px;
+      padding: 15px;
+      box-shadow: none; /* Remove shadow for a cleaner look on mobile */
+    }
+  }
+  
+  /* Small tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+  
+    /* Container adjustments */
+    .container {
+      padding: 20px;
+      max-width: 100%;
+      margin: 20px;
+    }
+  
+    /* Heading adjustments */
+    h1, h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  
+    /* Input fields and textarea */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      padding: 12px;
+      font-size: 15px;
+    }
+  
+    /* Button styling */
+    button {
+      padding: 14px;
+      font-size: 15px;
+    }
+  
+    /* Resume output section */
+    .resume-output {
+      margin-top: 30px;
+      padding: 20px;
+      box-shadow: none;
+    }
+  }
