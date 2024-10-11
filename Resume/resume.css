@@ -65,7 +65,7 @@ body {
   }
   
   .right-column h3 {
-    font-size: 18px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 15px;
     border-bottom: 2px solid #555;
@@ -73,8 +73,9 @@ body {
   }
   
   .section-content p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.8;
+    color:#555 ;
     
   }
   
