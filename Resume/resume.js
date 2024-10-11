@@ -85,7 +85,7 @@ function toggleSection(sectionId) {
   
     // Use html2pdf to generate and download the PDF
     html2pdf().from(element).set(opt).save().then(() => {
-      // Restore the Download button after PDF generation
+
       downloadButton.style.display = 'block';
     });
   }

@@ -223,7 +223,7 @@ body {
     /* Container adjustments */
     .container {
       padding: 15px;
-      box-shadow: none; /* Remove shadow for better mobile performance */
+      box-shadow: none; 
     }
   
     /* Heading adjustments */
@@ -252,14 +252,14 @@ body {
   
     /* Checkbox sections */
     input[type="checkbox"] {
-      transform: scale(1.2); /* Increase size for easier interaction on mobile */
+      transform: scale(1.2); 
     }
   
     /* Resume output section */
     .resume-output {
       margin-top: 20px;
       padding: 15px;
-      box-shadow: none; /* Remove shadow for a cleaner look on mobile */
+      box-shadow: none; 
     }
   }
   
