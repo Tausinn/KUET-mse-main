@@ -51,9 +51,9 @@ function toggleSection(sectionId) {
   
           ${document.getElementById('projects-check').checked ? `<h3>Projects</h3><div class="section-content"><p>${projects}</p></div>` : ''}
 
-           ${document.getElementById('achievements-check').checked ? `<h3>Achievements</h3><p>${achievements}</p>` : ''}
+           ${document.getElementById('achievements-check').checked ? `<h3>Achievements</h3><div class="section-content"><p>${achievements}</p></div>` : ''}
 
-            ${document.getElementById('interests-check').checked ? `<h3>Interests</h3><p>${interests}</p>` : ''}
+            ${document.getElementById('interests-check').checked ? `<h3>Interests</h3><div class="section-content"><p>${interests}</p></div>` : ''}
         </div>
       </div>
     `;
